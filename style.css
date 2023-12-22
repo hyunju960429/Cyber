@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Urbanist', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, h1, h2, h3, h4, h5,h6 {
+    font-family: 'Urbanist','Noto Sans KR' sans-serif;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+#main>div {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#loop {
+    position: absolute;
+    top: 23%;
+    height: 25%;
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+}
+#loop h1 {
+    flex-shrink: 0;
+    animation: ani 15s linear infinite;
+}
+#loop span {
+    color: transparent;
+    -webkit-text-stroke: 1.2px #000;
+}
+
+@keyframes ani {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 100;
+}
+
+
+
+.section-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-inner {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    justify-content: space-between;
+}
+
+.section-inner-con {
+    width: 38%;
+    z-index: 120;
+}
+.t-left {}
+.t-right {
+    text-align: right;
+}
