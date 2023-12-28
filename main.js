@@ -14,7 +14,7 @@ function locomotive() {
 
     //smooth: true --> 부드러운 스크롤을 활성화 합니다.
 
-    locoScroll.on("scroll", ScrollTrigger.update); 
+    locoScroll.on("scroll", ScrollTrigger.update); //update() 하기! , 본예제에서는 사용 안하려고 안씀
     //LocomotiveScroll의 Scroll이벤트가 발생할때 마다 ScrollTrigger의 update 함수를 호출합니다,
     //이것은 스크롤 이벤트와 ScrollTrigger간의 연동을 설정합니다.
 
